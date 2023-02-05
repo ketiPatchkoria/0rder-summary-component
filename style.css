@@ -1,0 +1,208 @@
+body {
+    width:100%;
+    height: 100vh;
+    background-color:hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-mobile.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+}
+
+.container {
+    width:327px;
+    height: 567px;
+    border-radius: 20px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    position:absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.img-hero {
+    width:100%;
+    height:160px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.header {
+    width:263px;
+    height:29px;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.header h2 {
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 29px;
+    color: #1F2E55;
+}
+
+.description {
+    width:263px;
+    height:75px;
+    text-align: center;
+    margin-top: 16px;
+}
+.description p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #717FA6;
+}
+
+.div-price {
+    width:279px;
+    height: 81px;
+    background: #F7F9FF;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.icon-music {
+    width: 48px;
+    height: 48px;
+}
+
+.price {
+    margin-left: 20px;
+}
+.price :first-child {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1F2E55;
+}
+
+.price :last-child {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #717FA6;
+}
+
+.div-price > p {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: #382AE1;
+    margin-left: 50px;
+}
+
+.btn-payment {
+    Width: 279px;
+    Height: 50px;
+    border-radius: 11px;
+    background-color: #382AE1;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+    margin-top: 24px;
+}
+
+.btn-payment p {
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.order {
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 20px;
+    color: #717FA6;
+    margin-top: 24px;
+}
+
+.div-price > p:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #766CF1;
+}
+
+.btn-payment:hover {
+    cursor: pointer;
+    background-color: #766CF1;
+}
+
+.order:hover {
+    cursor: pointer;
+    color: #1F2E55;
+}
+
+@media screen and (min-width: 900px) and (min-height:700px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+    }
+
+    .container {
+        width: 450px; 
+        height: 697px;
+    }
+
+    .img-hero {
+        width: 450px;
+        height: 220px;
+    }
+
+    .header {
+        width: 354px;
+        height: 37px;
+        margin-top: 45px;
+    }
+
+    .header h2 {
+        font-size: 28px;
+        line-height: 37px;
+    }
+
+    .description {
+        width: 354px;
+        height: 78px;
+        margin-top: 17px;
+    }
+
+    .description p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .div-price {
+        width: 354px;
+        height: 98px;
+        margin-top: 20px;
+    }
+
+    .price :first-child,
+    .price :last-child {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .div-price > p {
+        font-size:14px;
+        line-height: 19px;
+        margin-left: 94px;
+    }
+
+    .btn-payment {
+        width: 354px;
+        height: 50px;
+        margin-top: 32px;
+    }
+
+    .order {
+        margin-top: 32px;
+    }
+
+}
